@@ -1,11 +1,150 @@
-*.d.ts
+# Dependencies
+node_modules/
+.pnpm-store/
+.yarn/
+
+# CDKTF
+cdktf.out/
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+.gen/
+imports/
+
+# TypeScript
+dist/
+build/
+*.tsbuildinfo
 *.js
-node_modules
-cdktf.out
-cdktf.log
-*terraform.*.tfstate*
-.gen
-.terraform
-tsconfig.tsbuildinfo
+*.js.map
+*.d.ts
 !jest.config.js
-!setup.js
+!.eslintrc.js
+!commitlint.config.js
+
+# Testing
+coverage/
+.nyc_output/
+junit.xml
+test-report.xml
+*.lcov
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Environment
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+*.pem
+*.key
+*.cert
+*.pfx
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Package managers
+package-lock.json
+yarn.lock
+!pnpm-lock.yaml
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+.cache/
+tmp/
+temp/
+
+# Build artifacts
+out/
+target/
+
+# Secrets - NEVER commit these!
+secrets/
+.secrets/
+*.private
+*.secret
+private/
+credentials/
+.credentials/
+
+# AWS
+.aws-sam/
+.aws/
+
+# Azure
+.azure/
+local.settings.json
+
+# Misc
+*.pid
+*.seed
+*.pid.lock
+.grunt
+.lock-wscript
+.node_repl_history
+.npm
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.parcel-cache
+.next
+.nuxt
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.vscode-test
+.yarn-integrity
+
+# Debug
+.pnp.*
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
