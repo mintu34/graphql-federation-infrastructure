@@ -1,0 +1,13 @@
+{
+  "language": "typescript",
+  "app": "npx ts-node src/main.ts",
+  "projectId": "graphql-federation-poc",
+  "sendCrashReports": "false",
+  "terraformProviders": ["aws@~> 5.0", "azurerm@~> 3.0"],
+  "terraformModules": [],
+  "codeMakerOutput": ".gen",
+  "context": {
+    "excludeStackIdFromLogicalIds": "true",
+    "allowSepCharsInLogicalIds": "true"
+  }
+}
